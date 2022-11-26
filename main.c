@@ -5,7 +5,8 @@
  * Small program to calculate the greatest common denominator
  * between two numbers using the Euclidean Algorithm
  *
- * @copyright None
+ * @copyright GPL 3.0
+ * https://www.gnu.org/licenses/gpl-3.0.html
  *
  */
 
@@ -15,13 +16,13 @@
 int gcd(int a, int b)
 {
   // If both 0, error
-  if (a == 0 && b == 0) return -1;
+  if (a == 0 && b == 0) { return -1; }
   // Using definition for division of 0
-  if (b == 0) return a;
-  if (a == 0) return b;
+  if (b == 0) { return a; }
+  if (a == 0) { return b; }
 
   // If equal gcd is same
-  if (a == b) return a;
+  if (a == b) { return a; }
 
   int large, small = 0;
 
