@@ -9,7 +9,6 @@
  * https://www.gnu.org/licenses/gpl-3.0.html
  *
  */
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -23,7 +22,6 @@ int gcd(int a, int b)
 
   // If equal gcd is same
   if (a == b) { return a; }
-
 
   int large = 0;
   int small = 0;
@@ -41,7 +39,6 @@ int gcd(int a, int b)
   // If remainder is 0 means common denominator is small
   else { return small; }
 }
-
 
 int main(int argc, char const* argv[])
 {
