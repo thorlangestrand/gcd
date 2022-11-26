@@ -24,8 +24,10 @@ int gcd(int a, int b)
   // If equal gcd is same
   if (a == b) { return a; }
 
-  int large, small = 0;
 
+  int large = 0;
+  int small = 0;
+  
   // Set values based on which is larger
   if (b > a) { large = b; small = a; }
   else { large = a; small = b; }
